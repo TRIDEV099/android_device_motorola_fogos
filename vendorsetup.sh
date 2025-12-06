@@ -22,6 +22,7 @@ clone_if_missing "https://github.com/TRIDEV099/android_kernel_motorola_sm6375.gi
 # Additional repos
 clone_if_missing "https://github.com/TRIDEV099/hardware_motorola.git" "16.2" "hardware/motorola"
 clone_if_missing "https://github.com/JNWSG/hardware_dolby.git" "16.0" "hardware/dolby"
+clone_if_missing "https://github.com/LineageOS/android_hardware_samsung_slsi_nfc.git" "" "hardware/samsung_slsi/nfc"
 # VIPER4AndroidFX
 clone_if_missing "https://github.com/TRIDEV099/packages_apps_ViPER4AndroidFX.git" "v4a" "packages/apps/ViPER4AndroidFX"
 # ---------------------------------------------------------
