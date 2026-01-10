@@ -14,11 +14,11 @@ clone_if_missing() {
     fi
 }
 # Git clones
-clone_if_missing "https://github.com/TRIDEV099/android_device_motorola_fogos.git" "16.2" "device/motorola/fogos"
-clone_if_missing "https://github.com/TRIDEV099/android_device_motorola_sm6375-common.git" "16.2" "device/motorola/sm6375-common"
-clone_if_missing "https://github.com/TRIDEV099/android_vendor_motorola_fogos.git" "16.2" "vendor/motorola/fogos"
-clone_if_missing "https://github.com/TRIDEV099/android_vendor_motorola_sm6375-common.git" "16.2" "vendor/motorola/sm6375-common"
-clone_if_missing "https://github.com/TRIDEV099/android_kernel_motorola_sm6375.git" "16.2" "kernel/motorola/sm6375"
+clone_if_missing "https://github.com/TRIDEV099/android_device_motorola_fogos.git" "16.0" "device/motorola/fogos"
+clone_if_missing "https://github.com/TRIDEV099/android_device_motorola_sm6375-common.git" "16.0" "device/motorola/sm6375-common"
+clone_if_missing "https://github.com/TRIDEV099/android_vendor_motorola_fogos.git" "16.0" "vendor/motorola/fogos"
+clone_if_missing "https://github.com/TRIDEV099/android_vendor_motorola_sm6375-common.git" "16.0" "vendor/motorola/sm6375-common"
+clone_if_missing "https://github.com/TRIDEV099/android_kernel_motorola_sm6375.git" "" "kernel/motorola/sm6375"
 # Additional repos
 clone_if_missing "https://github.com/TRIDEV099/hardware_motorola.git" "16.1" "hardware/motorola"
 clone_if_missing "https://github.com/TRIDEV099/hardware_dolby.git" "16.0" "hardware/dolby"
