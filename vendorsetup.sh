@@ -25,4 +25,14 @@ clone_if_missing "https://github.com/JNWSG/hardware_dolby.git" "16.0" "hardware/
 clone_if_missing "https://github.com/LineageOS/android_hardware_samsung_slsi_nfc.git" "" "hardware/samsung_slsi/nfc"
 # VIPER4AndroidFX
 clone_if_missing "https://github.com/TRIDEV099/packages_apps_ViPER4AndroidFX.git" "v4a" "packages/apps/ViPER4AndroidFX"
+# MotCamera
+clone_if_missing "https://gitea.com/JNWSG/vendor_motorola_MotCamera4.git" "16.0" "vendor/motorola/MotCamera4"
 # ---------------------------------------------------------
+MOTCAMERA_BLOCK="# Inherit MotCamera config
+PRODUCT_PACKAGES += \\
+    MotCamera4
+\$(call inherit-product, vendor/motorola/MotCamera4/motcamera4.mk)"
+if ! grep -q "MotCamera4/motcamera4.mk" device/motorola/fogos/device.mk 2>/dev/null; then
+    echo "" >> device/motorola/fogos/device.mk
+    echo "$MOTCAMERA_BLOCK" >> device/motorola/fogos/device.mk
+fi
