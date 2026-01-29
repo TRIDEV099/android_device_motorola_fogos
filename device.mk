@@ -29,6 +29,7 @@ PRODUCT_PACKAGES += \
     LineageApertureAppDevice \
     ProductFrameworksResDevice \
     SystemUIResDevice \
+    SettingsResDevice \
     TurboPowerOverlay \
     WifiResDevice \
     WifiResDeviceXT2363-8 \
