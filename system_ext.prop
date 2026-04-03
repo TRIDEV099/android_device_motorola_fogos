@@ -1,2 +1,5 @@
 # Display
 sys.brightness.disable_gamma_conversion=true
+
+# Matrixx Maintainer Flag
+MATRIXX_MAINTAINER := TRIDEV099
